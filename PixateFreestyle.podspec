@@ -32,4 +32,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'CoreText', 'QuartzCore', 'UIKit', 'CoreGraphics', 'PixateFreestyle'
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PixateFreestyle"' }
   #s.prepare_command = 'open "http://www.pixate.com/docs/framework/ios/latest/getting-started/index.html#app_setup" || true'
+
+  s.dependency 'CocoaLumberjack', '~> 2.0.0-beta4'
+
 end

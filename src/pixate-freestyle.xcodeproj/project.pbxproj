@@ -944,16 +944,6 @@
 		9C98664218C0499000C71922 /* PXLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649B18C0498F00C71922 /* PXLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98664318C0499000C71922 /* PXLoggingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649C18C0498F00C71922 /* PXLoggingUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98664418C0499000C71922 /* PXLoggingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98649D18C0498F00C71922 /* PXLoggingUtils.m */; };
-		9C98664518C0499000C71922 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649F18C0498F00C71922 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98664618C0499000C71922 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864A018C0498F00C71922 /* DDAbstractDatabaseLogger.m */; };
-		9C98664718C0499000C71922 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864A118C0498F00C71922 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98664818C0499000C71922 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864A218C0498F00C71922 /* DDASLLogger.m */; };
-		9C98664918C0499000C71922 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864A318C0498F00C71922 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98664A18C0499000C71922 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864A418C0498F00C71922 /* DDFileLogger.m */; };
-		9C98664B18C0499000C71922 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864A518C0498F00C71922 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98664C18C0499000C71922 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864A618C0498F00C71922 /* DDLog.m */; };
-		9C98664D18C0499000C71922 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864A718C0498F00C71922 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98664E18C0499000C71922 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864A818C0498F00C71922 /* DDTTYLogger.m */; };
 		9C98664F18C0499000C71922 /* PXNotificationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864AA18C0498F00C71922 /* PXNotificationInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98665018C0499000C71922 /* PXNotificationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864AB18C0498F00C71922 /* PXNotificationInfo.m */; };
 		9C98665118C0499000C71922 /* PXNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864AC18C0498F00C71922 /* PXNotificationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1368,6 +1358,7 @@
 		9CAAFAD718EB10A2000C0233 /* PXStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAAFA2018EB10A2000C0233 /* PXStringValue.m */; };
 		9CAAFAD918EB10A2000C0233 /* PXUndefinedValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CAAFA2118EB10A2000C0233 /* PXUndefinedValue.h */; };
 		9CAAFADA18EB10A2000C0233 /* PXUndefinedValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAAFA2218EB10A2000C0233 /* PXUndefinedValue.m */; };
+		F3ABDDD541E931FD32D06C68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0904B6EB8A59C81FBB135EF5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1393,6 +1384,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0904B6EB8A59C81FBB135EF5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A09A24F1901ADD20046FEAF /* PXRGBFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXRGBFunction.h; sourceTree = "<group>"; };
 		0A09A2501901ADD20046FEAF /* PXRGBFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXRGBFunction.m; sourceTree = "<group>"; };
 		0A09A2531901AE910046FEAF /* PXRGBAFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXRGBAFunction.h; sourceTree = "<group>"; };
@@ -1459,6 +1451,7 @@
 		0AE5525119007D01001128A6 /* PXColorValueProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXColorValueProperty.m; sourceTree = "<group>"; };
 		0AE5525419007EB9001128A6 /* PXColorProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXColorProperty.h; sourceTree = "<group>"; };
 		0AE5525519007EB9001128A6 /* PXColorProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXColorProperty.m; sourceTree = "<group>"; };
+		572A0699C971287267DE7B50 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9C23047018DA126300969D18 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9C23047118DA126300969D18 /* MABaseFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABaseFuture.h; sourceTree = "<group>"; };
 		9C23047218DA126300969D18 /* MABaseFuture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABaseFuture.m; sourceTree = "<group>"; };
@@ -2341,16 +2334,6 @@
 		9C98649B18C0498F00C71922 /* PXLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXLog.h; sourceTree = "<group>"; };
 		9C98649C18C0498F00C71922 /* PXLoggingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXLoggingUtils.h; sourceTree = "<group>"; };
 		9C98649D18C0498F00C71922 /* PXLoggingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXLoggingUtils.m; sourceTree = "<group>"; };
-		9C98649F18C0498F00C71922 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		9C9864A018C0498F00C71922 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		9C9864A118C0498F00C71922 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
-		9C9864A218C0498F00C71922 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
-		9C9864A318C0498F00C71922 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
-		9C9864A418C0498F00C71922 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
-		9C9864A518C0498F00C71922 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
-		9C9864A618C0498F00C71922 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
-		9C9864A718C0498F00C71922 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
-		9C9864A818C0498F00C71922 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		9C9864AA18C0498F00C71922 /* PXNotificationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXNotificationInfo.h; sourceTree = "<group>"; };
 		9C9864AB18C0498F00C71922 /* PXNotificationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXNotificationInfo.m; sourceTree = "<group>"; };
 		9C9864AC18C0498F00C71922 /* PXNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXNotificationManager.h; sourceTree = "<group>"; };
@@ -2768,6 +2751,7 @@
 		9CAAFA2018EB10A2000C0233 /* PXStringValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXStringValue.m; sourceTree = "<group>"; };
 		9CAAFA2118EB10A2000C0233 /* PXUndefinedValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXUndefinedValue.h; sourceTree = "<group>"; };
 		9CAAFA2218EB10A2000C0233 /* PXUndefinedValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXUndefinedValue.m; sourceTree = "<group>"; };
+		D10EF88FDAF4B1D9BAA73DA0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2784,6 +2768,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C84A63E18AE9CB600E7CDA7 /* Foundation.framework in Frameworks */,
+				F3ABDDD541E931FD32D06C68 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3852,6 +3837,7 @@
 				9C10E89718E5ECA7001299AC /* Submodules */,
 				9C84A63C18AE9CB600E7CDA7 /* Frameworks */,
 				9C84A63B18AE9CB600E7CDA7 /* Products */,
+				A031C0279DE228A0AECC2A21 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3871,6 +3857,7 @@
 				9C84A63D18AE9CB600E7CDA7 /* Foundation.framework */,
 				9C84A64B18AE9CB600E7CDA7 /* XCTest.framework */,
 				9C84A64E18AE9CB600E7CDA7 /* UIKit.framework */,
+				0904B6EB8A59C81FBB135EF5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3919,7 +3906,6 @@
 				9C98643B18C0498F00C71922 /* CG */,
 				0AE551F1190027BE001128A6 /* EM */,
 				9C98649618C0498F00C71922 /* Logging */,
-				9C98649E18C0498F00C71922 /* Lumberjack */,
 				9C9864A918C0498F00C71922 /* Notifications */,
 				9C9864B018C0498F00C71922 /* Parsing */,
 				9C9864C618C0498F00C71922 /* Styling */,
@@ -4108,23 +4094,6 @@
 				9C98649D18C0498F00C71922 /* PXLoggingUtils.m */,
 			);
 			path = Logging;
-			sourceTree = "<group>";
-		};
-		9C98649E18C0498F00C71922 /* Lumberjack */ = {
-			isa = PBXGroup;
-			children = (
-				9C98649F18C0498F00C71922 /* DDAbstractDatabaseLogger.h */,
-				9C9864A018C0498F00C71922 /* DDAbstractDatabaseLogger.m */,
-				9C9864A118C0498F00C71922 /* DDASLLogger.h */,
-				9C9864A218C0498F00C71922 /* DDASLLogger.m */,
-				9C9864A318C0498F00C71922 /* DDFileLogger.h */,
-				9C9864A418C0498F00C71922 /* DDFileLogger.m */,
-				9C9864A518C0498F00C71922 /* DDLog.h */,
-				9C9864A618C0498F00C71922 /* DDLog.m */,
-				9C9864A718C0498F00C71922 /* DDTTYLogger.h */,
-				9C9864A818C0498F00C71922 /* DDTTYLogger.m */,
-			);
-			path = Lumberjack;
 			sourceTree = "<group>";
 		};
 		9C9864A918C0498F00C71922 /* Notifications */ = {
@@ -4898,6 +4867,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A031C0279DE228A0AECC2A21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				572A0699C971287267DE7B50 /* Pods.debug.xcconfig */,
+				D10EF88FDAF4B1D9BAA73DA0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -4924,7 +4902,6 @@
 				9C9865F418C0499000C71922 /* PXEllipticalArc.h in Headers */,
 				9C98662A18C0499000C71922 /* PXRenderable.h in Headers */,
 				0AE5524019006C9E001128A6 /* PXExpressionColor.h in Headers */,
-				9C98664918C0499000C71922 /* DDFileLogger.h in Headers */,
 				9CAAFA2618EB10A2000C0233 /* PXExpressionExports.h in Headers */,
 				9C98670718C0499000C71922 /* PXStylesheetLexer.h in Headers */,
 				0AE5525619007EB9001128A6 /* PXColorProperty.h in Headers */,
@@ -5053,7 +5030,6 @@
 				9C9866EF18C0499000C71922 /* PXFontEntry.h in Headers */,
 				9C98674C18C0499000C71922 /* PXOpacityStyler.h in Headers */,
 				9CAAFA7818EB10A2000C0233 /* PXInstructionCounter.h in Headers */,
-				9C98664D18C0499000C71922 /* DDTTYLogger.h in Headers */,
 				9C98677A18C04A5100C71922 /* NSObject+PXClass.h in Headers */,
 				9CAAFAC718EB10A2000C0233 /* PXExpressionValueBase.h in Headers */,
 				9C98665818C0499000C71922 /* PXNumberMatcher.h in Headers */,
@@ -5068,7 +5044,6 @@
 				9C98668F18C0499000C71922 /* PXDescendantCombinator.h in Headers */,
 				0A09BE7518EC9463004780F8 /* PXObjectValuesMethod.h in Headers */,
 				9CAAFA7418EB10A2000C0233 /* PXExpressionInstruction.h in Headers */,
-				9C98664518C0499000C71922 /* DDAbstractDatabaseLogger.h in Headers */,
 				9C98671B18C0499000C71922 /* PXStylesheet.h in Headers */,
 				9CAAFA5718EB10A2000C0233 /* PXSinFunction.h in Headers */,
 				9CAAFA5D18EB10A2000C0233 /* PXObjectForEachMethod.h in Headers */,
@@ -5096,7 +5071,6 @@
 				9CAAFA9118EB10A2000C0233 /* PXExpressionLexemeType.h in Headers */,
 				0A09BF2418ED9F1B004780F8 /* PXStringLengthMethod.h in Headers */,
 				0A09A2651901AF980046FEAF /* PXHSBAFunction.h in Headers */,
-				9C98664718C0499000C71922 /* DDASLLogger.h in Headers */,
 				0AE5523C19006C9E001128A6 /* PXFreestyleBuiltInScope.h in Headers */,
 				9C9865F618C0499000C71922 /* PXMath.h in Headers */,
 				9C98668518C0499000C71922 /* UIView+PXStyling-Private.h in Headers */,
@@ -5215,7 +5189,6 @@
 				9CAAFAB418EB10A2000C0233 /* PXScopeBase.h in Headers */,
 				0A09BE7218EC9463004780F8 /* PXObjectKeysMethod.h in Headers */,
 				0A09BF4B18EF2285004780F8 /* PXObjectUnshiftMethod.h in Headers */,
-				9C98664B18C0499000C71922 /* DDLog.h in Headers */,
 				9CAAFA8418EB10A2000C0233 /* PXBlockNode.h in Headers */,
 				9C98671518C0499000C71922 /* PXRuleSet.h in Headers */,
 				9CAAFA6A18EB10A2000C0233 /* PXSourceEmitter.h in Headers */,
@@ -5246,11 +5219,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C84A65D18AE9CB600E7CDA7 /* Build configuration list for PBXNativeTarget "pixate-freestyle" */;
 			buildPhases = (
+				3EF6E6323971E42B4FCC828B /* Check Pods Manifest.lock */,
 				9C4DB95D18AEC89B00AE80B2 /* Headers */,
 				9C84A63618AE9CB600E7CDA7 /* Sources */,
 				9C84A63718AE9CB600E7CDA7 /* Frameworks */,
 				9C84A63818AE9CB600E7CDA7 /* CopyFiles */,
 				0AE551F919002AD3001128A6 /* ShellScript */,
+				DC0466452A113ED50C94F0C1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -6062,6 +6037,36 @@
 			shellScript = "cd \"${SRCROOT}/Core/EM/Scopes\" && ./generateStringResource.pl > PXFreestyleBuiltinSource.m";
 			showEnvVarsInLog = 0;
 		};
+		3EF6E6323971E42B4FCC828B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0466452A113ED50C94F0C1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -6185,12 +6190,9 @@
 				9CAAFAB218EB10A2000C0233 /* PXScope.m in Sources */,
 				9C98675118C0499000C71922 /* PXShapeStyler.m in Sources */,
 				9C9865F318C0499000C71922 /* PXDimension.m in Sources */,
-				9C98664C18C0499000C71922 /* DDLog.m in Sources */,
 				9C98680718C04BA000C71922 /* PXUIDatePicker.m in Sources */,
 				9C98672618C0499000C71922 /* PXIdSelector.m in Sources */,
 				9C98663F18C0499000C71922 /* PXDelegateLogger.m in Sources */,
-				9C98664818C0499000C71922 /* DDASLLogger.m in Sources */,
-				9C98664618C0499000C71922 /* DDAbstractDatabaseLogger.m in Sources */,
 				9C98676A18C0499000C71922 /* PXImageUtils.m in Sources */,
 				9CAAFA2818EB10A2000C0233 /* PXObjectValueWrapper.m in Sources */,
 				9C98663818C0499000C71922 /* PXStrokeGroup.m in Sources */,
@@ -6233,7 +6235,6 @@
 				9C98676618C0499000C71922 /* PXFileWatcher.m in Sources */,
 				9CAAFAAB18EB10A2000C0233 /* PXBuiltInScope.m in Sources */,
 				9CAAFAA818EB10A2000C0233 /* PXScriptManager.m in Sources */,
-				9C98664A18C0499000C71922 /* DDFileLogger.m in Sources */,
 				9C98665B18C0499000C71922 /* PXPatternMatcher.m in Sources */,
 				9C9866F218C0499000C71922 /* PXFontRegistry.m in Sources */,
 				9CAAFA9218EB10A2000C0233 /* PXExpressionLexer.lm in Sources */,
@@ -6284,7 +6285,6 @@
 				9C98660718C0499000C71922 /* PXSolidPaint.m in Sources */,
 				9C98667818C0499000C71922 /* NSArray+Reverse.m in Sources */,
 				0AE5524419006C9E001128A6 /* PXHSLColorValue.m in Sources */,
-				9C98664E18C0499000C71922 /* DDTTYLogger.m in Sources */,
 				9C98663418C0499000C71922 /* PXNonScalingStroke.m in Sources */,
 				0A09BE7618EC9463004780F8 /* PXObjectValuesMethod.m in Sources */,
 				9C98671018C0499000C71922 /* PXValueParser.m in Sources */,
@@ -6519,6 +6519,7 @@
 		};
 		9C84A65E18AE9CB600E7CDA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572A0699C971287267DE7B50 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/pixate_freestyle.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -6543,6 +6544,7 @@
 		};
 		9C84A65F18AE9CB600E7CDA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10EF88FDAF4B1D9BAA73DA0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/pixate_freestyle.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

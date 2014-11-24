@@ -19,6 +19,7 @@
 #import "PXLog.h"
 #endif
 #else
+#define DDLEGACY YES
 #define DDLogInfo(...)
 #define DDLogVerbose(...)
 #define DDLogError(...)
