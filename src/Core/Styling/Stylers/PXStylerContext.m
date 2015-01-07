@@ -296,14 +296,27 @@ static NSString *DEFAULT_FONT = @"Helvetica";
     self.fontName = font.familyName;
     self.fontSize = font.pointSize;
     
-    CTFontRef ref = CTFontCreateWithName((CFStringRef)font.fontName, font.pointSize, NULL);
-    CTFontSymbolicTraits traits = CTFontGetSymbolicTraits(ref);
+    BOOL isBold     = NO;
+    BOOL isItalic   = NO;
     
-    BOOL isBold = ((traits & kCTFontBoldTrait) == kCTFontBoldTrait);
-    self.fontWeight = isBold ? @"bold" : @"normal";
+    if ([UIFontDescriptor class]) {
+        
+        // iOS7 + // Fixing a leak
+        UIFontDescriptor *fontDescriptor = font.fontDescriptor;
+        UIFontDescriptorSymbolicTraits fontDescriptorSymbolicTraits = fontDescriptor.symbolicTraits;
+        isBold   = (fontDescriptorSymbolicTraits & UIFontDescriptorTraitBold);
+        isItalic = (fontDescriptorSymbolicTraits & UIFontDescriptorTraitItalic);
+        
+    } else {
+        
+        CTFontRef ref = CTFontCreateWithName((CFStringRef)font.fontName, font.pointSize, NULL);
+        CTFontSymbolicTraits traits = CTFontGetSymbolicTraits(ref);
+        isBold = ((traits & kCTFontBoldTrait) == kCTFontBoldTrait);
+        isItalic = ((traits & kCTFontItalicTrait) == kCTFontItalicTrait);
+    }
     
-    BOOL isItalic = ((traits & kCTFontItalicTrait) == kCTFontItalicTrait);
     self.fontStyle = isItalic ? @"italic" : @"normal";
+    self.fontWeight = isBold ? @"bold" : @"normal";
 }
 
 - (void)applyOuterShadowToLayer:(CALayer *)layer
