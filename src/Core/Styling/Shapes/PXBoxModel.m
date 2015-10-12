@@ -39,6 +39,7 @@
 }
 
 @synthesize bounds = _bounds;
+@synthesize padding = _padding;
 
 #pragma mark - Initializers
 
