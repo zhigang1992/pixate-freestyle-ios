@@ -92,11 +92,11 @@ function xcode_build_target() {
     || die "XCode build failed for platform: ${1}."
 }
 
-xcode_build_target "iphonesimulator7.1" "${BUILDCONFIGURATION}" "i386" "6.1" "i386"
-xcode_build_target "iphonesimulator7.1" "${BUILDCONFIGURATION}" "x86_64" "7.0" "x86_64"
-xcode_build_target "iphoneos7.1" "${BUILDCONFIGURATION}" "armv7" "6.1" "Arm"
-xcode_build_target "iphoneos7.1" "${BUILDCONFIGURATION}" "armv7s" "6.1" "Arm7S"
-xcode_build_target "iphoneos7.1" "${BUILDCONFIGURATION}" "arm64" "7.0" "Arm64"
+xcode_build_target "iphonesimulator" "${BUILDCONFIGURATION}" "i386" "6.1" "i386"
+xcode_build_target "iphonesimulator" "${BUILDCONFIGURATION}" "x86_64" "7.0" "x86_64"
+xcode_build_target "iphoneos" "${BUILDCONFIGURATION}" "armv7" "6.1" "Arm"
+xcode_build_target "iphoneos" "${BUILDCONFIGURATION}" "armv7s" "6.1" "Arm7S"
+xcode_build_target "iphoneos" "${BUILDCONFIGURATION}" "arm64" "7.0" "Arm64"
 
 # -----------------------------------------------------------------------------
 # Merge lib files for different platforms into universal binary
