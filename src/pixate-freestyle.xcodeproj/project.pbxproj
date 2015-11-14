@@ -68,6 +68,7 @@
 		0AE5525319007D01001128A6 /* PXColorValueProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5525119007D01001128A6 /* PXColorValueProperty.m */; };
 		0AE5525619007EB9001128A6 /* PXColorProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AE5525419007EB9001128A6 /* PXColorProperty.h */; };
 		0AE5525719007EB9001128A6 /* PXColorProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5525519007EB9001128A6 /* PXColorProperty.m */; };
+		7CB340251BCBC23B00B44783 /* PXFontRegistryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB340241BCBC23B00B44783 /* PXFontRegistryTests.m */; settings = {ASSET_TAGS = (); }; };
 		9C08810C18BE9ECA0079A71B /* libpixate-freestyle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C84A63A18AE9CB600E7CDA7 /* libpixate-freestyle.a */; };
 		9C0B706818C52EEA00D2E7FD /* Version.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4DB80218AEA48000AE80B2 /* Version.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C23047D18DA126300969D18 /* MABaseFuture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C23047118DA126300969D18 /* MABaseFuture.h */; };
@@ -1459,6 +1460,7 @@
 		0AE5525119007D01001128A6 /* PXColorValueProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXColorValueProperty.m; sourceTree = "<group>"; };
 		0AE5525419007EB9001128A6 /* PXColorProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXColorProperty.h; sourceTree = "<group>"; };
 		0AE5525519007EB9001128A6 /* PXColorProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXColorProperty.m; sourceTree = "<group>"; };
+		7CB340241BCBC23B00B44783 /* PXFontRegistryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXFontRegistryTests.m; sourceTree = "<group>"; };
 		9C23047018DA126300969D18 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9C23047118DA126300969D18 /* MABaseFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABaseFuture.h; sourceTree = "<group>"; };
 		9C23047218DA126300969D18 /* MABaseFuture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABaseFuture.m; sourceTree = "<group>"; };
@@ -3809,6 +3811,7 @@
 				9C3177FB18BE936B00F4B79D /* PXAnimationStylerTests.m */,
 				9C3177FC18BE936B00F4B79D /* PXDeclarationTests.m */,
 				9C3177FD18BE936B00F4B79D /* PXFontInfoTests.m */,
+				7CB340241BCBC23B00B44783 /* PXFontRegistryTests.m */,
 				9C3177FE18BE936B00F4B79D /* PXLexemeTests.m */,
 				9C3177FF18BE936B00F4B79D /* PXMediaExpressionTest.m */,
 				9C31780018BE936B00F4B79D /* PXSpecificityTests.m */,
@@ -6388,6 +6391,7 @@
 				9C31780B18BE936B00F4B79D /* ImageBasedTests.m in Sources */,
 				9C317AF018BE936B00F4B79D /* PXFontInfoTests.m in Sources */,
 				9C317AF418BE936B00F4B79D /* PXStylerContextTests.m in Sources */,
+				7CB340251BCBC23B00B44783 /* PXFontRegistryTests.m in Sources */,
 				9C317AF718BE936B00F4B79D /* PXTransitionStylerTests.m in Sources */,
 				9C317AFC18BE936B00F4B79D /* W3CSelectorTests.m in Sources */,
 				9C31780C18BE936B00F4B79D /* PXShapeRenderingTests.m in Sources */,

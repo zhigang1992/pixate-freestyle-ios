@@ -84,6 +84,13 @@ static NSMutableSet *LOADED_FONTS;
     // cast
     NSString *result = match;
 
+
+//    + (UIFont *)systemFontOfSize:(CGFloat)fontSize;
+//    + (UIFont *)boldSystemFontOfSize:(CGFloat)fontSize;
+//    + (UIFont *)italicSystemFontOfSize:(CGFloat)fontSize;
+//    + (UIFont *)systemFontOfSize:(CGFloat)fontSize weight:(CGFloat)weight NS_AVAILABLE_IOS(8_2);
+//    + (UIFont *)monospacedDigitSystemFontOfSize:(CGFloat)fontSize weight:(CGFloat)weight NS_AVAILABLE_IOS(9_0);
+
     return (result) ? [UIFont fontWithName:result size:size] : nil;
 }
 
