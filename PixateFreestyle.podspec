@@ -28,14 +28,13 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.source       = {
         :git => "https://github.com/anton-matosov/pixate-freestyle-ios.git",
-        :tag => "2.1.5",
-        :submodules => true
+        :tag => "2.1.5"
   }
 
   s.default_subspec = 'All'
   s.subspec 'All' do |ss|
     ss.prefix_header_file = "src/pixate-freestyle-Prefix.pch"
-    ss.source_files = 'src/PixateFreestyle.{h,m}', "src/Version.h", 'src/Core/**/*.{h,m}', 'src/Modules/**/*.{h,m}', 'src/Kernel/Categories/*.{h,m}', 'src/Kernel/Utils/*.{h,c}', 'submodules/pixate-expression-machine/src/ExpressionMachine/**/*.{h,m,lm}'
+    ss.source_files = 'src/PixateFreestyle.{h,m}', "src/Version.h", 'src/Core/**/*.{h,m}', 'src/Modules/**/*.{h,m}', 'src/Kernel/Categories/*.{h,m}', 'src/Kernel/Utils/*.{h,c}'
     ss.requires_arc = true
     ss.dependency 'PixateFreestyle/MAFuture'
     ss.dependency 'CocoaLumberjack', '~> 2.2.0'
