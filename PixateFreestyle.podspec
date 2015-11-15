@@ -48,4 +48,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'CoreText', 'QuartzCore', 'UIKit', 'CoreGraphics'
   #s.prepare_command = 'open "http://www.pixate.com/docs/framework/ios/latest/getting-started/index.html#app_setup" || true'
+
+  s.dependency 'CocoaLumberjack', '~> 2.0.0-beta4'
+
 end

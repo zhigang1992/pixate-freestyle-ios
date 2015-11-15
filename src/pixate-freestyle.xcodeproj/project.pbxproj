@@ -890,16 +890,6 @@
 		9C98664218C0499000C71922 /* PXLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649B18C0498F00C71922 /* PXLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98664318C0499000C71922 /* PXLoggingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649C18C0498F00C71922 /* PXLoggingUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98664418C0499000C71922 /* PXLoggingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98649D18C0498F00C71922 /* PXLoggingUtils.m */; };
-		9C98664518C0499000C71922 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98649F18C0498F00C71922 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98664618C0499000C71922 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864A018C0498F00C71922 /* DDAbstractDatabaseLogger.m */; };
-		9C98664718C0499000C71922 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864A118C0498F00C71922 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98664818C0499000C71922 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864A218C0498F00C71922 /* DDASLLogger.m */; };
-		9C98664918C0499000C71922 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864A318C0498F00C71922 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98664A18C0499000C71922 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864A418C0498F00C71922 /* DDFileLogger.m */; };
-		9C98664B18C0499000C71922 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864A518C0498F00C71922 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98664C18C0499000C71922 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864A618C0498F00C71922 /* DDLog.m */; };
-		9C98664D18C0499000C71922 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864A718C0498F00C71922 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98664E18C0499000C71922 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864A818C0498F00C71922 /* DDTTYLogger.m */; };
 		9C98664F18C0499000C71922 /* PXNotificationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864AA18C0498F00C71922 /* PXNotificationInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98665018C0499000C71922 /* PXNotificationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9864AB18C0498F00C71922 /* PXNotificationInfo.m */; };
 		9C98665118C0499000C71922 /* PXNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9864AC18C0498F00C71922 /* PXNotificationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1188,6 +1178,7 @@
 		9C98684B18C04BA000C71922 /* UITabBarItem+PXStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9867E718C04BA000C71922 /* UITabBarItem+PXStyling.m */; };
 		9C98684E18C04C4700C71922 /* PixateFreestyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C98684C18C04C4700C71922 /* PixateFreestyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C98684F18C04C4700C71922 /* PixateFreestyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98684D18C04C4700C71922 /* PixateFreestyle.m */; };
+		F3ABDDD541E931FD32D06C68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0904B6EB8A59C81FBB135EF5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1213,6 +1204,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0904B6EB8A59C81FBB135EF5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8091F118E5F430003CD355 /* PXStylesheetLexer2.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = PXStylesheetLexer2.lm; sourceTree = "<group>"; };
 		0AC10E7C1A783D4E00FA95C9 /* PXSourceEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceEmitter.h; sourceTree = "<group>"; };
 		0AC10E7E1A783D6800FA95C9 /* PXSourceWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceWriter.h; sourceTree = "<group>"; };
@@ -1221,6 +1213,7 @@
 		0AC10E841A783DA700FA95C9 /* PXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXParser.h; sourceTree = "<group>"; };
 		0AC10E851A783DA700FA95C9 /* PXParserBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXParserBase.h; sourceTree = "<group>"; };
 		0AC10E861A783DA700FA95C9 /* PXParserBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXParserBase.m; sourceTree = "<group>"; };
+		572A0699C971287267DE7B50 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9C23047018DA126300969D18 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9C23047118DA126300969D18 /* MABaseFuture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABaseFuture.h; sourceTree = "<group>"; };
 		9C23047218DA126300969D18 /* MABaseFuture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABaseFuture.m; sourceTree = "<group>"; };
@@ -2103,16 +2096,6 @@
 		9C98649B18C0498F00C71922 /* PXLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXLog.h; sourceTree = "<group>"; };
 		9C98649C18C0498F00C71922 /* PXLoggingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXLoggingUtils.h; sourceTree = "<group>"; };
 		9C98649D18C0498F00C71922 /* PXLoggingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXLoggingUtils.m; sourceTree = "<group>"; };
-		9C98649F18C0498F00C71922 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		9C9864A018C0498F00C71922 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		9C9864A118C0498F00C71922 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
-		9C9864A218C0498F00C71922 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
-		9C9864A318C0498F00C71922 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
-		9C9864A418C0498F00C71922 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
-		9C9864A518C0498F00C71922 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
-		9C9864A618C0498F00C71922 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
-		9C9864A718C0498F00C71922 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
-		9C9864A818C0498F00C71922 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		9C9864AA18C0498F00C71922 /* PXNotificationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXNotificationInfo.h; sourceTree = "<group>"; };
 		9C9864AB18C0498F00C71922 /* PXNotificationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXNotificationInfo.m; sourceTree = "<group>"; };
 		9C9864AC18C0498F00C71922 /* PXNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXNotificationManager.h; sourceTree = "<group>"; };
@@ -2401,6 +2384,7 @@
 		9C9867E718C04BA000C71922 /* UITabBarItem+PXStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+PXStyling.m"; sourceTree = "<group>"; };
 		9C98684C18C04C4700C71922 /* PixateFreestyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixateFreestyle.h; sourceTree = SOURCE_ROOT; };
 		9C98684D18C04C4700C71922 /* PixateFreestyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PixateFreestyle.m; sourceTree = SOURCE_ROOT; };
+		D10EF88FDAF4B1D9BAA73DA0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2417,6 +2401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C84A63E18AE9CB600E7CDA7 /* Foundation.framework in Frameworks */,
+				F3ABDDD541E931FD32D06C68 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3381,6 +3366,7 @@
 				9C84A65318AE9CB600E7CDA7 /* PixateFreestyleTests */,
 				9C84A63C18AE9CB600E7CDA7 /* Frameworks */,
 				9C84A63B18AE9CB600E7CDA7 /* Products */,
+				A031C0279DE228A0AECC2A21 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3400,6 +3386,7 @@
 				9C84A63D18AE9CB600E7CDA7 /* Foundation.framework */,
 				9C84A64B18AE9CB600E7CDA7 /* XCTest.framework */,
 				9C84A64E18AE9CB600E7CDA7 /* UIKit.framework */,
+				0904B6EB8A59C81FBB135EF5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3446,7 +3433,6 @@
 				9C98643418C0498F00C71922 /* Categories */,
 				9C98643B18C0498F00C71922 /* CG */,
 				9C98649618C0498F00C71922 /* Logging */,
-				9C98649E18C0498F00C71922 /* Lumberjack */,
 				9C9864A918C0498F00C71922 /* Notifications */,
 				9C9864B018C0498F00C71922 /* Parsing */,
 				9C9864C618C0498F00C71922 /* Styling */,
@@ -3635,23 +3621,6 @@
 				9C98649D18C0498F00C71922 /* PXLoggingUtils.m */,
 			);
 			path = Logging;
-			sourceTree = "<group>";
-		};
-		9C98649E18C0498F00C71922 /* Lumberjack */ = {
-			isa = PBXGroup;
-			children = (
-				9C98649F18C0498F00C71922 /* DDAbstractDatabaseLogger.h */,
-				9C9864A018C0498F00C71922 /* DDAbstractDatabaseLogger.m */,
-				9C9864A118C0498F00C71922 /* DDASLLogger.h */,
-				9C9864A218C0498F00C71922 /* DDASLLogger.m */,
-				9C9864A318C0498F00C71922 /* DDFileLogger.h */,
-				9C9864A418C0498F00C71922 /* DDFileLogger.m */,
-				9C9864A518C0498F00C71922 /* DDLog.h */,
-				9C9864A618C0498F00C71922 /* DDLog.m */,
-				9C9864A718C0498F00C71922 /* DDTTYLogger.h */,
-				9C9864A818C0498F00C71922 /* DDTTYLogger.m */,
-			);
-			path = Lumberjack;
 			sourceTree = "<group>";
 		};
 		9C9864A918C0498F00C71922 /* Notifications */ = {
@@ -4151,6 +4120,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A031C0279DE228A0AECC2A21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				572A0699C971287267DE7B50 /* Pods.debug.xcconfig */,
+				D10EF88FDAF4B1D9BAA73DA0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -4171,7 +4149,6 @@
 				9C98665C18C0499000C71922 /* PXWordMatcher.h in Headers */,
 				9C9865F418C0499000C71922 /* PXEllipticalArc.h in Headers */,
 				9C98662A18C0499000C71922 /* PXRenderable.h in Headers */,
-				9C98664918C0499000C71922 /* DDFileLogger.h in Headers */,
 				9C98670718C0499000C71922 /* PXStylesheetLexer.h in Headers */,
 				9C98674A18C0499000C71922 /* PXLayoutStyler.h in Headers */,
 				9C98667D18C0499000C71922 /* NSMutableDictionary+PXObject.h in Headers */,
@@ -4265,7 +4242,6 @@
 				9C98662B18C0499000C71922 /* PXShape.h in Headers */,
 				9C9866EF18C0499000C71922 /* PXFontEntry.h in Headers */,
 				9C98674C18C0499000C71922 /* PXOpacityStyler.h in Headers */,
-				9C98664D18C0499000C71922 /* DDTTYLogger.h in Headers */,
 				9C98677A18C04A5100C71922 /* NSObject+PXClass.h in Headers */,
 				9C98665818C0499000C71922 /* PXNumberMatcher.h in Headers */,
 				9C98673618C0499000C71922 /* PXAttributedTextStyler.h in Headers */,
@@ -4277,7 +4253,6 @@
 				9C98668D18C0499000C71922 /* PXCombinatorBase.h in Headers */,
 				9C98681618C04BA000C71922 /* PXUIProgressView.h in Headers */,
 				9C98668F18C0499000C71922 /* PXDescendantCombinator.h in Headers */,
-				9C98664518C0499000C71922 /* DDAbstractDatabaseLogger.h in Headers */,
 				9C98671B18C0499000C71922 /* PXStylesheet.h in Headers */,
 				9C98680418C04BA000C71922 /* PXUICollectionViewDelegate.h in Headers */,
 				9C98664F18C0499000C71922 /* PXNotificationInfo.h in Headers */,
@@ -4296,7 +4271,6 @@
 				9C23048018DA126300969D18 /* MACompoundFuture.h in Headers */,
 				9C98676318C0499000C71922 /* PXFileUtils.h in Headers */,
 				9C98672518C0499000C71922 /* PXIdSelector.h in Headers */,
-				9C98664718C0499000C71922 /* DDASLLogger.h in Headers */,
 				9C9865F618C0499000C71922 /* PXMath.h in Headers */,
 				9C98668518C0499000C71922 /* UIView+PXStyling-Private.h in Headers */,
 				9C98670F18C0499000C71922 /* PXValueParser.h in Headers */,
@@ -4377,7 +4351,6 @@
 				9C9865F918C0499000C71922 /* PXVector.h in Headers */,
 				9C98677118C0499000C71922 /* PXUtils.h in Headers */,
 				9C98681818C04BA000C71922 /* PXUIRefreshControl.h in Headers */,
-				9C98664B18C0499000C71922 /* DDLog.h in Headers */,
 				9C98671518C0499000C71922 /* PXRuleSet.h in Headers */,
 				9C0B706818C52EEA00D2E7FD /* Version.h in Headers */,
 			);
@@ -4406,10 +4379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C84A65D18AE9CB600E7CDA7 /* Build configuration list for PBXNativeTarget "pixate-freestyle" */;
 			buildPhases = (
+				3EF6E6323971E42B4FCC828B /* Check Pods Manifest.lock */,
 				9C4DB95D18AEC89B00AE80B2 /* Headers */,
 				9C84A63618AE9CB600E7CDA7 /* Sources */,
 				9C84A63718AE9CB600E7CDA7 /* Frameworks */,
 				9C84A63818AE9CB600E7CDA7 /* CopyFiles */,
+				DC0466452A113ED50C94F0C1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -5206,6 +5181,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+		3EF6E6323971E42B4FCC828B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0466452A113ED50C94F0C1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* Begin PBXSourcesBuildPhase section */
 		9C23049118DA27CE00969D18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -5296,12 +5301,9 @@
 				9C98667618C0499000C71922 /* PXStyleTreeInfo.m in Sources */,
 				9C98675118C0499000C71922 /* PXShapeStyler.m in Sources */,
 				9C9865F318C0499000C71922 /* PXDimension.m in Sources */,
-				9C98664C18C0499000C71922 /* DDLog.m in Sources */,
 				9C98680718C04BA000C71922 /* PXUIDatePicker.m in Sources */,
 				9C98672618C0499000C71922 /* PXIdSelector.m in Sources */,
 				9C98663F18C0499000C71922 /* PXDelegateLogger.m in Sources */,
-				9C98664818C0499000C71922 /* DDASLLogger.m in Sources */,
-				9C98664618C0499000C71922 /* DDAbstractDatabaseLogger.m in Sources */,
 				9C98676A18C0499000C71922 /* PXImageUtils.m in Sources */,
 				9C98663818C0499000C71922 /* PXStrokeGroup.m in Sources */,
 				9C9865FC18C0499000C71922 /* PXGradient.m in Sources */,
@@ -5332,7 +5334,6 @@
 				9C98675818C0499000C71922 /* PXTextContentStyler.m in Sources */,
 				9C98661918C0499000C71922 /* PXArrowRectangle.m in Sources */,
 				9C98676618C0499000C71922 /* PXFileWatcher.m in Sources */,
-				9C98664A18C0499000C71922 /* DDFileLogger.m in Sources */,
 				9C98665B18C0499000C71922 /* PXPatternMatcher.m in Sources */,
 				9C9866F218C0499000C71922 /* PXFontRegistry.m in Sources */,
 				9C98668918C0499000C71922 /* PXAdjacentSiblingCombinator.m in Sources */,
@@ -5363,7 +5364,6 @@
 				9C98664418C0499000C71922 /* PXLoggingUtils.m in Sources */,
 				9C98660718C0499000C71922 /* PXSolidPaint.m in Sources */,
 				9C98667818C0499000C71922 /* NSArray+Reverse.m in Sources */,
-				9C98664E18C0499000C71922 /* DDTTYLogger.m in Sources */,
 				9C98663418C0499000C71922 /* PXNonScalingStroke.m in Sources */,
 				9C98671018C0499000C71922 /* PXValueParser.m in Sources */,
 				9C9865F518C0499000C71922 /* PXEllipticalArc.m in Sources */,
@@ -5574,6 +5574,7 @@
 		};
 		9C84A65E18AE9CB600E7CDA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572A0699C971287267DE7B50 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DSTROOT = /tmp/pixate_freestyle.dst;
@@ -5599,6 +5600,7 @@
 		};
 		9C84A65F18AE9CB600E7CDA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10EF88FDAF4B1D9BAA73DA0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DSTROOT = /tmp/pixate_freestyle.dst;
