@@ -128,13 +128,58 @@ void PXForceLoadNSObjectPXSubclass() {}
     object_setClass(object, newClass);
 }
 
+static BOOL classRespondsToSelectorRAW(Class class, SEL selector)
+{
+    if (class != Nil)
+    {
+        return class_getInstanceMethod(class, selector) != NULL;
+    }
+    return NO;
+}
+
+static BOOL respondsToSelectorRAW(id self, SEL selector)
+{
+    if (self)
+    {
+        return classRespondsToSelectorRAW(object_getClass(self), selector);
+    }
+    return NO;
+}
+
+static BOOL classHierarchyRespondsToSelector(Class class, SEL selector)
+{
+    if (class)
+    {
+        if (classRespondsToSelectorRAW(class, selector))
+        {
+            return YES;
+        }
+        else
+        {
+            return classHierarchyRespondsToSelector(class_getSuperclass(class), selector);
+        }
+    }
+
+    return NO;
+}
+
 static BOOL respondsToSelectorIMP(id self, SEL _cmd, SEL selector)
 {
-    return
-#if !(TARGET_IPHONE_SIMULATOR && TARGET_CPU_X86_64)
-        ((BOOL)callSuper1v(self, [self pxClass], _cmd, selector)) ||
-#endif
-       (class_getInstanceMethod(object_getClass(self), selector) != NULL);
+    BOOL result1 = classHierarchyRespondsToSelector([self pxClass], selector);
+    BOOL result1Old = ((BOOL)callSuper1v(self, [self pxClass], _cmd, selector));
+
+    NSCAssert(result1 == result1Old, @"classHierarchyRespondsToSelector gives a false result");
+    BOOL result2 = respondsToSelectorRAW(self, selector);
+
+    printf("respondsToSelectorIMP(%s):, 1:%s 2:%s | self %p, self.pxClass: %p [%s] | self.class: %p [%s]\n",
+        sel_getName(selector),
+        (result1 ? "YES" : "NO"),
+        (result2 ? "YES" : "NO"),
+        (__bridge void*)self,
+        (__bridge void*)[self pxClass], object_getClassName([self pxClass]),
+        (__bridge void*)object_getClass(self), object_getClassName(object_getClass(self)));
+
+    return result1 || result2;
 }
 
 @end

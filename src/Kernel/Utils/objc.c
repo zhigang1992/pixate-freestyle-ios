@@ -23,6 +23,7 @@
 
 #include "objc.h"
 #include <string.h>
+#include <stdio.h>
 
 #define __bridge
 
@@ -50,10 +51,10 @@ void* callSuper1b(id self, Class superClass, SEL _cmd, BOOL arg1)
 	struct objc_super super;
 	super.receiver = (__bridge void *)self;
 	super.class = superClass != NULL ? superClass : class_getSuperclass(object_getClass(self));
-    
-    void* (*objc_msgSendSuperTyped)(id self, SEL _cmd, BOOL arg1) = (void*)objc_msgSendSuper;
 
-	return objc_msgSendSuperTyped((id) &super, _cmd, arg1);
+//    void* (*objc_msgSendSuperTyped)(id self, SEL _cmd, BOOL arg1) = (void*)objc_msgSendSuper;
+
+	return objc_msgSendSuper(&super, _cmd, arg1);
 }
 
 
@@ -62,10 +63,11 @@ void* callSuper1v(id self, Class superClass, SEL _cmd, void *arg1)
 	struct objc_super super;
 	super.receiver = (__bridge void *)self;
 	super.class = superClass != NULL ? superClass : class_getSuperclass(object_getClass(self));
-    
-    void* (*objc_msgSendSuperTyped)(id self, SEL _cmd, void *arg1) = (void*)objc_msgSendSuper;
 
-	return objc_msgSendSuperTyped((id) &super, _cmd, arg1);
+	printf("superClass: %p [%s]| self.class: %p [%s]\n", (void*)superClass, object_getClassName(superClass), (void*)object_getClass(self), object_getClassName((void*)object_getClass(self)));
+//    void* (*objc_msgSendSuperTyped)(id self, SEL _cmd, void *arg1) = (void*)objc_msgSendSuper;
+
+	return objc_msgSendSuper(&super, _cmd, arg1);
 }
 
 void* callSuper2(id self, Class superClass, SEL _cmd, id arg1, id arg2)
