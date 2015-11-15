@@ -165,6 +165,8 @@ static BOOL classHierarchyRespondsToSelector(Class class, SEL selector)
 
 static BOOL respondsToSelectorIMP(id self, SEL _cmd, SEL selector)
 {
+    // iOS 9 x64 simulators crashes with UITextFiled styling
+    // For more detail see https://github.com/Pixate/pixate-freestyle-ios/issues/186
 #if (TARGET_IPHONE_SIMULATOR && TARGET_CPU_X86_64)
     // Use RAW implementation
     BOOL pxClassRespondsToSelector = classHierarchyRespondsToSelector([self pxClass], selector);
