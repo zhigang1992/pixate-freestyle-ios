@@ -22,16 +22,14 @@
 //  Copyright (c) 2012 Pixate, Inc. All rights reserved.
 //
 
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
 #ifdef PX_LOGGING
-#import "DDLog.h"
 
-#undef LOG_LEVEL_ERROR
-#undef LOG_LEVEL_WARN
-#undef LOG_LEVEL_INFO
-#undef LOG_LEVEL_VERBOSE
+static const DDLogLevel ddLogLevel = DDLogLevelInfo;
 
-#define LOG_LEVEL_ERROR   (LOG_FLAG_ERROR)                                                    // 0...0001
-#define LOG_LEVEL_WARN    (LOG_FLAG_ERROR | LOG_FLAG_WARN)                                    // 0...0011
-#define LOG_LEVEL_INFO    (LOG_FLAG_ERROR | LOG_FLAG_WARN | LOG_FLAG_INFO)                    // 0...0111
-#define LOG_LEVEL_VERBOSE (LOG_FLAG_ERROR | LOG_FLAG_WARN | LOG_FLAG_INFO | LOG_FLAG_VERBOSE) // 0...1111
+#else
+
+static const DDLogLevel ddLogLevel = DDLogLevelNone;
+
 #endif

@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
              LICENSE
   }
   s.author       = { "Pixate" => "info@pixate.com" }
-  s.platform     = :ios, '5.0'
+  s.platform     = :ios, '8.0'
   s.source       = {
         :git => "https://github.com/Pixate/pixate-freestyle-ios.git",
         :tag => "2.1.4",
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'src/PixateFreestyle.{h,m}', "src/Version.h", 'src/Core/**/*.{h,m}', 'src/Modules/**/*.{h,m}', 'src/Kernel/Categories/*.{h,m}', 'src/Kernel/Utils/*.{h,c}', 'submodules/pixate-expression-machine/src/ExpressionMachine/**/*.{h,m,lm}'
     ss.requires_arc = true
     ss.dependency 'PixateFreestyle/MAFuture'
-    ss.dependency 'CocoaLumberjack', '~> 2.0.0'
+    ss.dependency 'CocoaLumberjack', '~> 2.2.0'
   end
 
   # This code was moved to subspec as it uses MMR while the rest of the project ARC
@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'src/Kernel/Third-Party/MAFuture/*.{h,m}'
     ss.requires_arc = false
   end
-
+  
   s.frameworks = 'CoreText', 'QuartzCore', 'UIKit', 'CoreGraphics'
   #s.prepare_command = 'open "http://www.pixate.com/docs/framework/ios/latest/getting-started/index.html#app_setup" || true'
 
