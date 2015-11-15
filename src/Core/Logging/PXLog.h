@@ -30,6 +30,6 @@ static const DDLogLevel ddLogLevel = DDLogLevelInfo;
 
 #else
 
-static const DDLogLevel ddLogLevel = DDLogLevelNone;
+static const DDLogLevel ddLogLevel = DDLogLevelOff;
 
 #endif
