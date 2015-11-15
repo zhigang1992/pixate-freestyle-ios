@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'All'
   s.subspec 'All' do |ss|
     ss.prefix_header_file = "src/pixate-freestyle-Prefix.pch"
-    ss.source_files = 'src/PixateFreestyle.{h,m}', "src/Version.h", 'src/Core/**/*.{h,m}', 'src/Modules/**/*.{h,m}', 'src/Kernel/Categories/*.{h,m}', 'src/Kernel/Utils/*.{h,c}',  'submodules/pixate-expression-machine/src/ExpressionMachine/**/*.{h,m,lm}'
+    ss.source_files = 'src/PixateFreestyle.{h,m}', "src/Version.h", 'src/Core/**/*.{h,m}', 'src/Modules/**/*.{h,m}', 'src/Kernel/Categories/*.{h,m}', 'src/Kernel/Utils/*.{h,c}', 'submodules/pixate-expression-machine/src/ExpressionMachine/**/*.{h,m,lm}', 'submodules/pixate-expression-machine/src/ExpressionMachine/**/**/*.{h,m,lm}'
     ss.requires_arc = true
     ss.dependency 'PixateFreestyle/MAFuture'
   end
@@ -42,7 +42,6 @@ Pod::Spec.new do |s|
     ss.requires_arc = false
   end
 
-  s.resource = "src/Framework/Resources/Info.plist"
   s.frameworks = 'CoreText', 'QuartzCore', 'UIKit', 'CoreGraphics'
   #s.prepare_command = 'open "http://www.pixate.com/docs/framework/ios/latest/getting-started/index.html#app_setup" || true'
 end
