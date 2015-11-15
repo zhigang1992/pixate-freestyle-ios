@@ -127,10 +127,53 @@ void PXForceLoadNSObjectPXSubclass() {}
     object_setClass(object, newClass);
 }
 
+static BOOL classRespondsToSelectorRAW(Class class, SEL selector)
+{
+    if (class != Nil)
+    {
+        return class_getInstanceMethod(class, selector) != NULL;
+    }
+    return NO;
+}
+
+static BOOL respondsToSelectorRAW(id self, SEL selector)
+{
+    if (self)
+    {
+        return classRespondsToSelectorRAW(object_getClass(self), selector);
+    }
+    return NO;
+}
+
+static BOOL classHierarchyRespondsToSelector(Class class, SEL selector)
+{
+    if (class)
+    {
+        if (classRespondsToSelectorRAW(class, selector))
+        {
+            return YES;
+        }
+        else
+        {
+            return classHierarchyRespondsToSelector(class_getSuperclass(class), selector);
+        }
+    }
+
+    return NO;
+}
+
 static BOOL respondsToSelectorIMP(id self, SEL _cmd, SEL selector)
 {
-	return ((BOOL)callSuper1v(self, [self pxClass], _cmd, selector))
-			|| (class_getInstanceMethod(object_getClass(self), selector) != NULL);
+    // iOS 9 x64 simulators crashes with UITextFiled styling
+    // For more detail see https://github.com/Pixate/pixate-freestyle-ios/issues/186
+#if (TARGET_IPHONE_SIMULATOR && TARGET_CPU_X86_64)
+    // Use RAW implementation
+    BOOL pxClassRespondsToSelector = classHierarchyRespondsToSelector([self pxClass], selector);
+#else
+    BOOL pxClassRespondsToSelector = ((BOOL)callSuper1v(self, [self pxClass], _cmd, selector));
+#endif
+
+    return pxClassRespondsToSelector || respondsToSelectorRAW(self, selector);
 }
 
 @end
