@@ -27,6 +27,7 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import "objc.h"
+#include "TargetConditionals.h"
 
 static BOOL respondsToSelectorIMP(id self, SEL _cmd, SEL selector);
 
@@ -129,8 +130,11 @@ void PXForceLoadNSObjectPXSubclass() {}
 
 static BOOL respondsToSelectorIMP(id self, SEL _cmd, SEL selector)
 {
-	return ((BOOL)callSuper1v(self, [self pxClass], _cmd, selector))
-			|| (class_getInstanceMethod(object_getClass(self), selector) != NULL);
+    return
+#if !(TARGET_IPHONE_SIMULATOR && TARGET_CPU_X86_64)
+        ((BOOL)callSuper1v(self, [self pxClass], _cmd, selector)) ||
+#endif
+       (class_getInstanceMethod(object_getClass(self), selector) != NULL);
 }
 
 @end
