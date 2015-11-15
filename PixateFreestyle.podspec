@@ -26,12 +26,16 @@ Pod::Spec.new do |s|
   }
   s.author       = { "Pixate" => "info@pixate.com" }
   s.platform     = :ios, '5.0'
-  s.source       = { :git => "https://github.com/anton-matosov/pixate-freestyle-ios.git", :tag => "2.1.4" }
+  s.source       = {
+        :git => "https://github.com/anton-matosov/pixate-freestyle-ios.git",
+        :tag => "2.1.4",
+        :submodules => true
+  }
 
   s.default_subspec = 'All'
   s.subspec 'All' do |ss|
     ss.prefix_header_file = "src/pixate-freestyle-Prefix.pch"
-    ss.source_files = 'src/PixateFreestyle.{h,m}', "src/Version.h", 'src/Core/**/*.{h,m}', 'src/Modules/**/*.{h,m}', 'src/Kernel/Categories/*.{h,m}', 'src/Kernel/Utils/*.{h,c}', 'submodules/pixate-expression-machine/src/ExpressionMachine/**/*.{h,m,lm}', 'submodules/pixate-expression-machine/src/ExpressionMachine/**/**/*.{h,m,lm}'
+    ss.source_files = 'src/PixateFreestyle.{h,m}', "src/Version.h", 'src/Core/**/*.{h,m}', 'src/Modules/**/*.{h,m}', 'src/Kernel/Categories/*.{h,m}', 'src/Kernel/Utils/*.{h,c}', 'submodules/pixate-expression-machine/src/ExpressionMachine/**/*.{h,m,lm}'
     ss.requires_arc = true
     ss.dependency 'PixateFreestyle/MAFuture'
   end
