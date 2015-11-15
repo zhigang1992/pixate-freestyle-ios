@@ -165,21 +165,14 @@ static BOOL classHierarchyRespondsToSelector(Class class, SEL selector)
 
 static BOOL respondsToSelectorIMP(id self, SEL _cmd, SEL selector)
 {
-    BOOL result1 = classHierarchyRespondsToSelector([self pxClass], selector);
-    BOOL result1Old = ((BOOL)callSuper1v(self, [self pxClass], _cmd, selector));
+#if (TARGET_IPHONE_SIMULATOR && TARGET_CPU_X86_64)
+    // Use RAW implementation
+    BOOL pxClassRespondsToSelector = classHierarchyRespondsToSelector([self pxClass], selector);
+#else
+    BOOL pxClassRespondsToSelector = ((BOOL)callSuper1v(self, [self pxClass], _cmd, selector));
+#endif
 
-    NSCAssert(result1 == result1Old, @"classHierarchyRespondsToSelector gives a false result");
-    BOOL result2 = respondsToSelectorRAW(self, selector);
-
-    printf("respondsToSelectorIMP(%s):, 1:%s 2:%s | self %p, self.pxClass: %p [%s] | self.class: %p [%s]\n",
-        sel_getName(selector),
-        (result1 ? "YES" : "NO"),
-        (result2 ? "YES" : "NO"),
-        (__bridge void*)self,
-        (__bridge void*)[self pxClass], object_getClassName([self pxClass]),
-        (__bridge void*)object_getClass(self), object_getClassName(object_getClass(self)));
-
-    return result1 || result2;
+    return pxClassRespondsToSelector || respondsToSelectorRAW(self, selector);
 }
 
 @end
