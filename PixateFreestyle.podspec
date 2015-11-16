@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.source       = {
         :git => "https://github.com/anton-matosov/pixate-freestyle-ios.git",
-        :tag => "2.1.6"
+        :tag => s.version.to_s
   }
 
   s.default_subspec = 'All'
