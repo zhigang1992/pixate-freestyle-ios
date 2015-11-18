@@ -50,9 +50,9 @@
 
 @interface UIView (PXStyling) <PXStyleable>
 
-@property (nonatomic, copy) NSString *styleId;
-@property (nonatomic, copy) NSString *styleClass;
-@property (nonatomic, copy) NSString *styleCSS;
+@property (nonatomic, copy) IBInspectable NSString *styleId;
+@property (nonatomic, copy) IBInspectable NSString *styleClass;
+@property (nonatomic, copy) IBInspectable NSString *styleCSS;
 @property (nonatomic) PXStylingMode styleMode UI_APPEARANCE_SELECTOR;
 
 - (void)addStyleClass:(NSString *)styleClass;
